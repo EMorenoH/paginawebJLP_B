@@ -277,7 +277,7 @@ article{
     width: 100%;
     max-width: 1200px;
     margin-top: 40px;
-    margin-left: 120px;
+    margin-left: 20px;
     padding-right: 40px;
     text-align: justify;
 }
@@ -313,11 +313,7 @@ article p{
 
 
 .led img{
-    width: 1150px;
-    height: 1150px;
-    margin-top: 8px;
-    margin-left: 10px;
-    border-radius: 0px;
+    width: 100%;
 }
 
 
