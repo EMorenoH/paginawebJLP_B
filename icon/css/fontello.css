@@ -56,3 +56,18 @@
 }
  
 .icon-menu:before { content: '\f0c9'; } /* '' */
+
+
+
+.appWhatsapp{
+    position: fixed;
+    right: 26px;
+    bottom: 70px;
+    width: 60px;
+    z-index: 1000;
+}
+.appWhatsapp img{
+    width: 100%;
+    height: auto;
+}
+
