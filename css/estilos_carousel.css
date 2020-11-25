@@ -25,6 +25,14 @@ body {
     font-weight: 500;
     text-transform: uppercase;
 }
+.subtitulo2 {
+    margin: 0;
+    color: #F28D13;
+    display: inline;
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
 
 .servicio { 
     color: #fff;
@@ -35,6 +43,16 @@ body {
     font-family: 'Dancing Script', ;
     margin-top: 0;
 }
+.servicio2 { 
+    color: #F28D13;
+    margin: 0px 0;
+    font-size: 40px;
+    font-weight: 400;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.7);
+    font-family: 'Dancing Script', ;
+    margin-top: 0;
+}
+
 
 .linea-division {
     width: 80%;
@@ -60,7 +78,7 @@ body {
     justify-content: center;
     align-items: center;
     user-select: none;
-    width: 500px;
+    width: 900px;
     height: 500px;
 }
 
