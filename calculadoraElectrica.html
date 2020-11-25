@@ -1,23 +1,20 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Energy Infinitus</title>
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
-    <link rel="stylesheet" href="icon/css/fontello.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/estilos.css">
+    <title>Calculadora Eléctrica</title>
+    
     <link rel="stylesheet" href="css/estilos_privacidad.css">
+<!--    <link rel="stylesheet" href="css/estilos.css"> -->
+    <link rel="stylesheet" href="icon/css/fontello.css">
+    <link rel="stylesheet" href="css/menu_calculadora.css">
 
+
+<!--    <link rel="stylesheet" href="css/main.css"> -->
 
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-
-    <link rel="shortcut icon" type="Hoja membretada/logo05.jpg" href="Hoja membretada/logo05.ico">
 </head>
 <body>
-    <script>
-        alert (img scr= ("COVID-19 ");
-    </script>
     <header>
         <div class="container-header">
             <div class="logo-title">
@@ -48,34 +45,34 @@
         </ul>
         </div>
     </header>
-    
-    <div class="container-portada">
-        <div class="capa-gradient"></div>
-        <div class="container-details">
-            <div class="details">
-                <h1>Energy Infinitus</h1>
-                <p>Empresa con 20 años de experiencia en el medio del desarrollo de ingenieria electrica y construccion de la misma, creada con la finalidad de dar servicio a los usuarios que asi lo requieran.!</p>
-                <a href="Unidades de Negocio.html"><button>Ver mas detalles</button></a>
-            </div>
-        </div>
+
     </div>
-    
-    <main>
-        <article>
-            <h1>Empresa dedicada al desarrollo de Ingenieria y Construccion</h1>
-            <hr>
-            <p>JLP Energía Infiníta es una empresa 100% mexicana, nace como un holding de empresas para sumar experiencias.</p>
-            
-            <p>En suma nuestros servicios y productos son integrales y cuentan con los más estrictos controles de calidad.</p>
-            
-            <p></p>
-            
-            <p></p>
-        </article>
-    </main>
-    
 
+    <div class="corriente">
+        <h3>Calculo de Corriente Nominal (In) Sistema Trifasico</h3>
+        <br>
 
+        <form name="corriente">
+            <input type="button" value="Escribe Potencia (W)">
+            <input type="text" id="numero1">
+            <br>
+            <br>
+            <input type="button" value="Escribe Voltaje (V)">
+            <input type="text" id="numero2">
+            <br>
+            <br>
+            <input type="button" value="Resultado In (A) =" onclick="document.corriente.ans.value=resultado(document.corriente.ans.value);"> 
+            <input type="textfield" name="ans" value="">
+            <br>
+            <br>
+            <input type="reset" value="Reset">
+            <br>
+            <br>
+        </form> 
+
+    </div>
+
+    
     <footer>
        
        <div class="container-footer-all">
@@ -95,7 +92,7 @@
 
                     <div class="row">
                         <img src="icon/facebook.png">
-                        <label>Siguenos en Facebook</label>
+                        <label><a href="https://www.facebook.com/jlp.energiainfinita.1">Siguenos en Facebook</a></label>
                     </div>
                     <div class="row">
                         <img src="icon/twitter.png">
@@ -111,7 +108,7 @@
 
                 <div class="colum3">
 
-                    <h1>Informacion Contactos</h1>
+                    <h1>Informacion Contacto:</h1>
 
                     <div class="row2">
                         <img src="icon/oficina.png">
@@ -127,9 +124,11 @@
                         <label>+52 (55) 53.61.27.52</label>
                     </div>
 
-                    <div class="row2">
+                    <div class="row2 ">
                         <img src="icon/contact.png">
-                         <label>ventas@jlpinfinita.com.mx</label>
+                         <label><a href="mailto:ventas@jlpinfinita.com.mx">ventas@jlpinfinita.com.mx</a></label>
+
+
                     </div>
 
                 </div>
@@ -139,26 +138,31 @@
         </div>
         
         <div class="container-footer">
-               <div class="footer">
+                <div class="footer">
                     <div class="copyright">
-                        © 2020 Todos los Derechos Reservados | <a href="">Energy Infinitus</a>
+                        © 2020 Todos los Derechos Reservados | <a href="index.html">Energy Infinitus</a>
                     </div>
 
                     <div class="information">
                         <a href="index.html">Informacion Compañia</a> | <a href="">Aviso Legal</a> | <a href="">Terminos y Condiciones de Uso</a>
                     </div>
                 </div>
-
-            </div>   
-            
-            <a class="appWhatsapp" target="_blanck" href="https://api.whatsapp.com/send?phone=525521705334&text=Hola!&nbsp;me&nbsp;pueden&nbsp;Ayudar?">
-            <img src="image/logowhatsapp.png" alt="whatsapp">
-            </a>
-
+        </div>      
     </footer>
 
-
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/script.js"></script>  
+
+    <script>
+        var resultado = function(numero1, numero2){
+            var numero1 = parseFloat(document.getElementById("numero1").value);
+            var numero2 = parseFloat(document.getElementById("numero2").value);
+
+
+            var resultado = (numero1 / ( numero2 * 1.732050807568877 * 0.9) );
+            return resultado;
+        }
+    </script>
+
 </body>
 </html>
