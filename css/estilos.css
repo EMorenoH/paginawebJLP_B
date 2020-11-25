@@ -9,7 +9,7 @@ header{
     width: 100%;
     height: 60px;
     background: #28285b;
-    border-bottom: 4px solid #3c78d8;
+    /*border-bottom: 4px solid #3c78d8;*/
     display: flex;
     justify-content: space-between;
     color: white;
