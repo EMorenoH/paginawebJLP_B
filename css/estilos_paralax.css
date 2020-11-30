@@ -27,7 +27,7 @@ p {
 .contenido-header {
 	width: 100%;
 	height: 100vh;
-	background-image: url(../img/logo05.jpg);
+	background-image: url(../img/jlp.jpg);
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
@@ -37,7 +37,7 @@ p {
 	width: 0%;
 	height: 100%;
 	max-width: 100%;
-	background-image: url(../img/jlp.jpg);
+	background-image: url(../img/logo05.jpg);
 }
 
 .contenido-header .texto {
